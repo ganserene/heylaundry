@@ -49,5 +49,8 @@ group :development, :test do
   gem 'spring'
   
   gem 'gibbon', github: "amro/gibbon"
+  gem 'bower', '~> 0.0.2'
+  gem 'bower-rails'
+
 end
 
