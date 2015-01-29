@@ -91,14 +91,42 @@
 <script>
     $(function(){
         $(".element").typed({
-            strings: ["Clean laundry delivered right to your doorstep.", "Fresh laundry delivered right to your doorstep."],
-            typeSpeed: 1
+            strings: ["Clean", "Fresh"],
+            typeSpeed: 1,
+            // typing speed
+            typeSpeed: 100,
+            // time before typing starts
+            startDelay: 2,
+            // backspacing speed
+            backSpeed: 100,
+            // time before backspacing
+            backDelay: 100,
+            // loop
+            loop: true,
+            // false = infinite
+            loopCount: false,
+            // show cursor
+            showCursor: false,
+            // character for cursor
+            cursorChar: "|",
+            // attribute to type (null == text)
+            attr: null,
+            // either html or text
+            contentType: 'html',
+            // call when done callback function
+            callback: function() {},
+            // starting callback function before each string
+            preStringTyped: function() {},
+            //callback for every typed string
+            onStringTyped: function() {},
+            // callback for reset
+            resetCallback: function() {}
         });
     });
 </script>
 </body>
 </html>
-<span class="element"></span>                  
+<h2> <span class="element"></span> <span>laundry delivered right to your doorstep.</span></h2>                  
                         
                         <h4></h4>Hey friend, help us build Hey, laundry!<br>With 1,000 email signups, we'll be well on our way to make this dream a reality</h4>
                         <hr class="intro-divider">
@@ -109,12 +137,14 @@
 	/* Add your own MailChimp form style overrides in your site stylesheet or in this style block.
 	   We recommend moving this block and the preceding CSS link to the HEAD of your HTML file. */
 </style>
-<div id="mc_embed_signup">
+<div>
 <form action="//heylaundry.us10.list-manage.com/subscribe/post?u=12fd6d8d92333601e248f25d8&amp;id=70cb957a2a" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
-	<input type="email" value="" name="EMAIL" class="email" id="mce-EMAIL" placeholder="enter email" required>
     <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
-    <div style="position: absolute; left: -5000px;"><input type="text" name="b_12fd6d8d92333601e248f25d8_70cb957a2a" tabindex="-1" value=""></div>
-    <div class="clear"><input type="submit" value="Get Early Access" name="Get Early Access" id="mc-embedded-subscribe" class="button"></div>
+    <input type="text" name="b_12fd6d8d92333601e248f25d8_70cb957a2a" tabindex="-1" value="" style="position: absolute; left: -5000px;">
+    <div style="display:inline-flex">
+        <input style="padding: 20px;font-size: 20px;" type="email" value="" name="EMAIL" class="email" id="mce-EMAIL" placeholder="enter email" required>
+        &nbsp;
+        <input style="padding: 20px;width: 250px;font-size: 20px;background: lightblue;" type="submit" value="Get Early Access" name="Get Early Access" id="mc-embedded-subscribe" class="button">
     </div>
 </form>
 </div>
