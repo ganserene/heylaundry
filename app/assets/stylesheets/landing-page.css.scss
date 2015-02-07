@@ -34,11 +34,15 @@ h6 {
 
 .topnav {
     font-size: 14px; 
+    background-color: #647F99;
+
 }
 
-.lead {
-    font-size: 18px;
+.lead 
+p {
+    font-size: 14px;
     font-weight: 400;
+    font-color: #E7E7E7
 }
 
 .intro-header {
@@ -140,6 +144,8 @@ h6 {
 .section-heading {
     margin-bottom: 30px;
     font-family: 'Montserrat', sans-serif;
+    font-color: #E7E7E7;
+    font-weight: 300;
 }
 
 .section-heading-spacer {
@@ -150,6 +156,8 @@ h6 {
     font-weight: 400;
     padding-top: 5%;
     padding-bottom: 1%;
+    font-color: #E7E7E7;
+
 }
 
 .banner {
@@ -231,4 +239,34 @@ p.copyright {
     text-align: center;
     font-size: 30px;
     margin-bottom: 40px;
+}
+
+
+.button {
+    /*adjust the roundness*/
+    border-radius: 8px;
+    moz-border-radius: 8px;
+    webkit-border-radius: 8px;
+    /*adjust height and width*/
+    height: 40px;
+    width: 40px; 
+    /*change border colour*/
+    border:0px #000000 solid;
+    color: #ffffff;
+    text-align: center;
+    vertical-align: middle;
+    line-height: 5px;
+}
+
+.email {
+    /*adjust the roundness*/
+    border-radius: 8px;
+    moz-border-radius: 8px;
+    webkit-border-radius: 8px;
+    /*adjust height and width*/
+    height: 40px;
+    width: 40px; 
+    /*change border colour*/
+    border:0px #000000 solid;
+    color: #000000
 }
