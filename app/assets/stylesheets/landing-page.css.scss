@@ -270,3 +270,9 @@ p.copyright {
     border:1px #808080 solid;
     color: #808080
 }
+
+.element {
+  position: relative;
+  top: 50%;
+  transform: translateY(-50%);
+}
