@@ -5,18 +5,22 @@
 				h2.toplogo HeyLaundry
 				ul.list-unstyled.todos
 					li
-						em v
-						span xx
+						em
+						span.bar
+						span.bar.bar3
+						span.bar.bar2
 					li.main
-						em v
+						em
 						span
 							i laundry.
 							| Your dirty laundry washed and
 							br
-							| hand-delivered to your doorstep.
+							|  hand-delivered to your doorstep.
 					li
-						em v
-						span xx
+						em
+						span.bar.bar2
+						span.bar
+						span.bar.bar3
 
 .mailing
 	.container
@@ -25,26 +29,26 @@
 				p
 					| Hey friend, help us build heylaundry.
 					br
-					| With your support, we can make this happen.
+					|  With your support, we can make this happen.
 				br
 				= render 'mailchimp'
 
 .how-it-works
 	.container.text-center
 		.row
-			.col-sm-10.col-sm-offset-1
+			.col-md-10.col-md-offset-1.col-sm-12
 				h3 How it works
 				.row
 					.col-sm-4
-						em.icon
+						em.icon.basket
 						p Pick me, maybe?
 						span Tell us where and what time you'd like your dirty laundry to be picked up.
 					.col-sm-4
-						em.icon
+						em.icon.spinning
 						p I'm spinnin'!
 						span Your clothes will be washed, dry cleaned, pressed and folded to perfection.
 					.col-sm-4
-						em.icon
+						em.icon.home
 						p Home sweet home.
 						span Your freshly washed clothes will be delivered home in a lovely fabric bag.
 
@@ -52,10 +56,20 @@
 	.container
 		.row
 			.col-xs-12.text-center
-				h3 Ready to enjoy <strong>easy</strong> and <strong>hassle</strong> free laundry?
+				h3 Ready to enjoy easy & hassle free laundry?
 				p
 					| Drop your email and be the first to know when we launch.
 					br
 					| We promise to never spam your inbox or give your info away.
 				br
 				= render 'mailchimp'
+
+.footer
+	.container
+		.row
+			.col-xs-12.text-center
+				#demo.social
+				p Contact
+				p = link_to "hello@heylaundry.com", "mailto:hello@heylaundry.com"
+				p Made by nice people from Malaysia. Copyright © heylaundry 2015. All Rights Reserved
+
