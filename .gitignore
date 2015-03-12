@@ -15,3 +15,9 @@
 /log/*
 !/log/.keep
 /tmp
+
+# ENV
+.env
+
+#databse.yml
+/config/database.yml
