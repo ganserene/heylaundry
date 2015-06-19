@@ -1,3 +1,3 @@
 Rails.application.routes.draw do
-  root 'welcome#homepage'
+  root 'static_pages#landing'
 end
